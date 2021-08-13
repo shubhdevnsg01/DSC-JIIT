@@ -12,7 +12,7 @@ html {
 a {
 	text-decoration: none;
 }
-.container {
+.contain {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
@@ -204,7 +204,7 @@ p {
 	background-position: top center;
 	position: relative;
 	z-index: 1;
-	background-image: url(assests/1876579.jpg);
+	background-image: url(assests/backgroun-image.jpg);
 	
 }
 
@@ -643,13 +643,26 @@ p {
 
 
 .svg {
-    width: 350px;
+	width: 400px;
   }
   
   .container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
+	display: flex;
+	align-items: left;
+	height: 100%;
+	justify-content: left;
   }
+
+  
+  text {
+	font-family: 'Lobster', cursive;
+	text-anchor: left;
+	stroke: #305872;
+	fill: #304772;
+	stroke-width: 0.1vw;
+	font-size: Min(Max(2300vw, 1000rem), 12rem);
+  }
+
+ 
+
 /* End  Media Query For Desktop */
