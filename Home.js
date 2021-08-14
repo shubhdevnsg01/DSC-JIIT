@@ -1,4 +1,3 @@
-
 import React, {Component, useState} from 'react';
 import { useSpring, animated } from 'react-spring';
 import 'antd/dist/antd.css';
@@ -77,12 +76,12 @@ const props = useSpring({
 
 })
 
-const { freq, factor, scale, opacity } = useSpring({
-  from: { factor: 10, opacity: 0, scale: 0.9, freq: '0.0175, 0.0' },
-    to: { factor: 150, opacity: 1, scale: 1, freq: '0.0, 0.0' },
-  config: { duration: 3000 },
+// const { freq, factor, scale, opacity } = useSpring({
+//   from: { factor: 10, opacity: 0, scale: 0.9, freq: '0.0175, 0.0' },
+//     to: { factor: 150, opacity: 1, scale: 1, freq: '0.0, 0.0' },
+//   config: { duration: 3000 },
 
-})
+// })
 
 
 return (
@@ -93,8 +92,8 @@ return (
     <div class="header contain">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero">
-            <h1><span>S</span>hubham <span>S</span>ingh</h1>
+          <a href="#hero"> 
+            <h1><span>W</span>elcome</h1>
           </a>
         </div>
         <div class="nav-list">
@@ -116,49 +115,49 @@ return (
 
  
   <section id="hero">
-    <div class="hero contain">
+    <div className="hero contain">
       <div>
-      <animated.svg className="svg" style={{ scale, opacity }} viewBox="0 0 1078 646">
-      <defs>
-        <filter id="water">
-          <AnimFeTurbulence
-            type="fractalNoise"
-            baseFrequency={freq} // frequency of the noise: higher frequency => finer distortion
-            numOctaves="2" // The higher the number of octaves, the more natural the noise looks. Though more octaves also require more calculations, resulting in a negative impact on performance. (MDN)
-            result="TURB" // assigns the name to be referenced on a subsequent filter by "in" attribute
-            seed="1"
-          />
-          {/* https://www.geeksforgeeks.org/svg-fedisplacementmap-element/ */}
-          <AnimFeDisplacementMap
-            // xChannelSelector="R" // doesn't seem to change anything
-            // yChannelSelector="G"
-            in="SourceGraphic" // input for this filter
-            in2="TURB" // second input for the filter. refers to the feTurbulance filter primitive
-            // result="DISP" // not used
-            scale={factor}
-          />
-        </filter>
-      </defs>
-      <g filter="url(#water)">
-        <text x="120%" y="30%">
-        <tspan dy="-0.7em" dx="0.9em">
-            Hi!
-          </tspan>
-          <tspan dy="1.9em" dx="-2.5em">
-            This is Shubham 
-          </tspan>
-          
-
-        </text>
-      </g>
-    </animated.svg> 
+      <svg viewBox="0 0 800 600">
+  <symbol id="s-text">
+    <text textAnchor="middle"
+          x="50%"
+          y="35%"
+          className="text--line"
+          >
+      Elastic
+    </text>
+    <text textAnchor="middle"
+          x="50%"
+          y="68%"
+          className="text--line2"
+          >
+      Stroke
+    </text>
+    
+  </symbol>
   
-        
-       {/* <h1>MY<span></span></h1> */}
-        <div>
-        </div>
-        {/* <a href="#projects" type="button" class="cta">Portfolio</a> */}
+  <g className="g-ants">
+    <use xlinkHref="#s-text"
+      className="text-copy" throwIfNamespace="false"></use>     
+    <use xlinkHref="#s-text"
+      className="text-copy" throwIfNamespace="false"></use>     
+    <use xlinkHref="#s-text"
+      className="text-copy" throwIfNamespace="false"></use>     
+    <use xlinkHref="#s-text"
+      className="text-copy" throwIfNamespace="false"></use>     
+    <use xlinkHref="#s-text"
+      className="text-copy" throwIfNamespace="false"></use>     
+  </g>
+  
+  
+</svg>
+      
+  
+
+      
       </div>
+      
+      
       </div>
       
   </section>
@@ -175,7 +174,7 @@ return (
     <Row>
       <Col span={9}> <a href=" https://github.com/shubhdevnsg01/calculator"> <img src ="./assests/calculator 2.png" alt="" className={classes.image}/></a></Col>
       <Col span={13}>
-      <h2>
+      <h2 class="voila">
         This was my first React JS project - A calculator!
         I have used React hooks to develop this one.
         <br/>
@@ -183,6 +182,8 @@ return (
        •	Components and their reusability <br/>
        •	States and Functions to update them <br/>
        •	Npm installing packages and viewing them in node_modules <br/>
+      
+       <strong>Click on the picture to see the project on my git hub account</strong>
       </h2>
       </Col>
     </Row>
@@ -198,13 +199,63 @@ return (
       <Row>
         <Col span={9}><a href="https://github.com/shubhdevnsg01/snake-game">  <img src ="./assests/snake eating game screenshot.png" alt=""/> </a></Col>
         <Col span={13}>
-        <h2>
+        <h2 class="voila">
 
           I coded a snake eating game to learn and implements basic concepts of Javascript. 
           We all have played this game on our nokia phones back in the pre Android days. 
           This project focusses majorly on basics of Javascript, 
           it will help people who have just started learning JS.
 
+           
+          <strong>Click on the picture to see the project on my git hub account</strong>
+
+          
+        </h2>
+        </Col>
+      </Row>
+      
+     
+      
+    </Slide>
+
+
+
+
+    <Slide right>
+     
+      <Row>
+        <Col span={9}><a href="https://github.com/shubhdevnsg01/titanic-ML">  <img src ="./assests/titanic.jpg" alt=""/> </a></Col>
+        <Col span={13}>
+        <h2 class="voila">
+
+        This was my first Machine learning project that I made. 
+        This project enumerates the probability of the survivors on the basis of various variables like age, gender,social status, arrival on different ports etc. 
+        I made it on google collaboratory as it has a friendly user-interface and works smoothly on your pc 
+        (if you dont have a strong pc, then google collab really helps) 
+        It is a fairly common project but its good for beginners.
+          
+          <strong>Click on the picture to see the project on my git hub account</strong>
+        </h2>
+        </Col>
+      </Row>
+      
+     
+      
+    </Slide>
+
+
+
+    <Slide right>
+     
+      <Row>
+        <Col span={9}><a href="https://github.com/shubhdevnsg01/miscellaneous-projects">  <img src ="./assests/Screen.png" alt=""/> </a></Col>
+        <Col span={13}>
+        <h2 class="voila">
+
+        This is a contact form that I made in a workshop conducted by DSC JIIT,
+        These are some basics html css projects that I have made when I had started learning HTML,CSS.
+
+        <strong>Click on the picture to see the project on my git hub account</strong>
           
         </h2>
         </Col>
@@ -242,10 +293,13 @@ return (
         <Flip right>
         <p>
           <strong>
+            <h3>
           Hi! I am pursuing my Bachelors in Computer Science. I have begun my journey by learning languages like HTML, CSS, Javascript,React.Js, C++ and Python. 
           I am currently upskilling myself by developing small scale projects in these
            languages and hope that these baby steps will help me reach heights.!
+           </h3>
            </strong>
+        
            </p>
         </Flip>
         </div>
