@@ -1,3 +1,4 @@
+
 import React, {Component, useState} from 'react';
 import { useSpring, animated } from 'react-spring';
 import 'antd/dist/antd.css';
@@ -13,8 +14,6 @@ import styled, { css } from 'styled-components';
 import Flash from 'react-reveal/Flash';
 import { makeStyles } from '@material-ui/core/styles';
 
-const AnimFeTurbulence = animated('feTurbulence')
-const AnimFeDisplacementMap = animated('feDisplacementMap')
 
 
 
@@ -116,46 +115,14 @@ return (
  
   <section id="hero">
     <div className="hero contain">
-      <div>
-      <svg viewBox="0 0 800 600">
-  <symbol id="s-text">
-    <text textAnchor="middle"
-          x="50%"
-          y="35%"
-          className="text--line"
-          >
-      Elastic
-    </text>
-    <text textAnchor="middle"
-          x="50%"
-          y="68%"
-          className="text--line2"
-          >
-      Stroke
-    </text>
-    
-  </symbol>
-  
-  <g className="g-ants">
-    <use xlinkHref="#s-text"
-      className="text-copy" throwIfNamespace="false"></use>     
-    <use xlinkHref="#s-text"
-      className="text-copy" throwIfNamespace="false"></use>     
-    <use xlinkHref="#s-text"
-      className="text-copy" throwIfNamespace="false"></use>     
-    <use xlinkHref="#s-text"
-      className="text-copy" throwIfNamespace="false"></use>     
-    <use xlinkHref="#s-text"
-      className="text-copy" throwIfNamespace="false"></use>     
-  </g>
-  
-  
-</svg>
       
-  
-
+      <svg viewBox="0 0 1320 300">
+	<text x="40%" y="18%" dy=".35em" text-anchor="middle">
+		Shubham Singh
+	</text>
+</svg>	
       
-      </div>
+      
       
       
       </div>
