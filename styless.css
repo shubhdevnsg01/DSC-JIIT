@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
 * {
 	padding: 0;
 	margin: 0;
@@ -356,10 +356,11 @@ p {
 	width: 100%;
 }
 #about .col-right h2 {
-	font-size: 1.8rem;
+	font-size: 4rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
+	font-family: 'lobster';
 }
 #about .col-right p {
 	margin-bottom: 20px;
@@ -385,6 +386,9 @@ p {
 	width: 98%;
 	border: 7px solid crimson;
 	z-index: -1;
+}
+.fon{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* End About Section */
 
@@ -668,18 +672,18 @@ svg text {
 	text-transform: uppercase;
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
-	stroke: #365fa0;
+	stroke: white;
 	font-size: 140px;
 }
 @keyframes stroke {
 	0%   {
-		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+		fill: rgba(72,138,20,0); stroke: white;
 		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
 	}
-	70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
-	80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	70%  {fill: rgba(72,138,20,0); stroke: white; }
+	80%  {fill: rgba(72,138,20,0); stroke: white; stroke-width: 3; }
 	100% {
-		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+		fill: white; stroke: white; 
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
 }
