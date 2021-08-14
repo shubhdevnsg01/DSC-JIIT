@@ -1,5 +1,5 @@
 
-import React, {Component, useState} from 'react';
+import React, { useState} from 'react';
 import { useSpring, animated } from 'react-spring';
 import 'antd/dist/antd.css';
 import { Row, Col } from 'antd';
@@ -255,12 +255,12 @@ return (
       <animated.div style={props}><h1 class="section-title">About <span>me</span></h1></animated.div>
         <div>
         <Flip left>
-        <h2>Front End Developer</h2>
+        <h2>Front End Web Developer</h2>
         </Flip> 
         <Flip right>
         <p>
           <strong>
-            <h3>
+            <h3 class="fon">
           Hi! I am pursuing my Bachelors in Computer Science. I have begun my journey by learning languages like HTML, CSS, Javascript,React.Js, C++ and Python. 
           I am currently upskilling myself by developing small scale projects in these
            languages and hope that these baby steps will help me reach heights.!
