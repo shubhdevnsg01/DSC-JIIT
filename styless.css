@@ -66,6 +66,7 @@ p {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
+	
 }
 .brand h1 span {
 	color: crimson;
@@ -75,25 +76,24 @@ p {
 #header {
 	position: fixed;
 	z-index: 1000;
-	left: 0;
+	
 	top: 0;
 	width: 100vw;
 	height: auto;
 }
-#header .header {
+ #header .header {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
 }
-#header .nav-bar {
+ #header .nav-bar {
 	display: flex;
-	align-items: center;
+	text-align: center;
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 1300px;
 	padding: 0 10px;
-}
+}  
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
@@ -104,8 +104,8 @@ p {
 	top: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: right;
+	align-items: right;
 	z-index: 1;
 	overflow-x: hidden;
 	transition: 0.5s ease left;
@@ -121,6 +121,7 @@ p {
 	color: white;
 	text-transform: uppercase;
 	padding: 20px;
+
 	display: block;
 }
 #header .nav-list ul a::after {
@@ -642,27 +643,19 @@ p {
 }
 
 
-.svg {
-	width: 400px;
-  }
-  
-  .container {
-	display: flex;
-	align-items: left;
-	height: 100%;
-	justify-content: left;
-  }
 
   
-  text {
-	font-family: 'Lobster', cursive;
-	text-anchor: left;
-	stroke: #305872;
-	fill: #304772;
-	stroke-width: 0.1vw;
-	font-size: Min(Max(2300vw, 1000rem), 12rem);
-  }
 
- 
+.voila{
+	text-align: left;
+	
+	padding-left: 40px;
+}
+
 
 /* End  Media Query For Desktop */
+
+/*Animation*/
+
+
+
